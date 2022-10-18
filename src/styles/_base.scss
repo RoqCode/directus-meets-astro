@@ -10,7 +10,7 @@ html {
 
   font-family: 'Inter', sans-serif;
   color: $fontColorPrimary;
-  background-color: rgb(19, 1, 24);
+  background-color: rgb(29, 4, 35);
 }
 
 h1 {
@@ -18,6 +18,8 @@ h1 {
   font-weight: $fwBold;
   line-height: 1;
   letter-spacing: -0.05em;
+  margin-top: 0;
+  margin-bottom: 2rem;
   //text outline
   -webkit-text-stroke: 2px $fontColorPrimary;
   -webkit-text-fill-color: transparent;
