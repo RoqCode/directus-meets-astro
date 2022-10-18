@@ -1,0 +1,71 @@
+---
+const response = await fetch(import.meta.env.GRAPHQL_URL, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    Accept: 'application/json',
+  },
+  body: JSON.stringify({
+    query: `
+        query {
+          hero {
+            id
+            headline
+            subheadline
+            body
+            img {
+              id
+              title
+              filename_disk
+            }
+          }
+        }
+      `,
+  }),
+});
+
+const json = await response.json();
+const hero = json.data.hero;
+---
+
+<section class="hero">
+  <div class="bg-image">
+    <img
+      src={`${import.meta.env.DIRECTUS_ASSETS}/${hero.img.filename_disk}`}
+      alt={hero.img.title}
+    />
+  </div>
+  <div class="hero__content">
+    <h1>{hero.headline}</h1>
+    <h2>{hero.subheadline}</h2>
+    <p>{hero.body}</p>
+  </div>
+</section>
+
+<style lang="scss">
+  .hero {
+    position: relative;
+    min-height: 80vh;
+    width: 100%;
+
+    &__content {
+      position: relative;
+      z-index: 1;
+      width: 50%;
+    }
+  }
+
+  .bg-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    z-index: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+</style>

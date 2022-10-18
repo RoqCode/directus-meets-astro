@@ -1,43 +1,10 @@
 ---
 import Layout from '../layout/layout.astro';
-
-const response = await fetch(import.meta.env.GRAPHQL_URL, {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    Accept: 'application/json',
-  },
-  body: JSON.stringify({
-    query: `
-        query {
-          hero {
-            id
-            headline
-            subheadline
-            body
-            img {
-              id
-              title
-              filename_disk
-            }
-          }
-        }
-      `,
-  }),
-});
-
-const json = await response.json();
-const hero = json.data.hero;
+import Hero from '../components/Hero.astro';
 ---
 
 <Layout>
-  <h1>{hero.headline}</h1>
-  <h2>{hero.subheadline}</h2>
-  <p>{hero.body}</p>
-  <img
-    src={`${import.meta.env.DIRECTUS_ASSETS}/${hero.img.filename_disk}`}
-    alt={hero.img.title}
-  />
+  <Hero />
 </Layout>
 
 <style lang="scss"></style>
