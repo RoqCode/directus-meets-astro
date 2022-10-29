@@ -14,5 +14,8 @@
     "@astrojs/svelte": "^1.0.1",
     "astro": "^1.4.7",
     "svelte": "^3.51.0"
+  },
+  "devDependencies": {
+    "sass": "^1.55.0"
   }
 }
