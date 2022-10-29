@@ -1,0 +1,234 @@
+/*
+    Grid-Classes for frontend use
+*/
+
+//  Container
+
+.container {
+  @include container();
+}
+
+//  Row
+
+.row {
+  @include container(row);
+}
+
+//  Columns
+
+.col-1 {
+  @include col(1);
+}
+.col-2 {
+  @include col(2);
+}
+.col-3 {
+  @include col(3);
+}
+.col-4 {
+  @include col(4);
+}
+.col-5 {
+  @include col(5);
+}
+.col-6 {
+  @include col(6);
+}
+.col-7 {
+  @include col(7);
+}
+.col-8 {
+  @include col(8);
+}
+.col-9 {
+  @include col(9);
+}
+.col-10 {
+  @include col(10);
+}
+.col-11 {
+  @include col(11);
+}
+.col-12 {
+  @include col(12);
+}
+.col-13 {
+  @include col(13);
+}
+.col-14 {
+  @include col(14);
+}
+.col-15 {
+  @include col(15);
+}
+.col-16 {
+  @include col(16);
+}
+.col-17 {
+  @include col(17);
+}
+.col-18 {
+  @include col(18);
+}
+.col-19 {
+  @include col(19);
+}
+.col-20 {
+  @include col(20);
+}
+.col-21 {
+  @include col(21);
+}
+.col-22 {
+  @include col(22);
+}
+.col-23 {
+  @include col(23);
+}
+.col-24 {
+  @include col(24);
+}
+
+//  Push: Left
+
+.push-l-1 {
+  @include push('l', 1);
+}
+.push-l-2 {
+  @include push('l', 2);
+}
+.push-l-3 {
+  @include push('l', 3);
+}
+.push-l-4 {
+  @include push('l', 4);
+}
+.push-l-5 {
+  @include push('l', 5);
+}
+.push-l-6 {
+  @include push('l', 6);
+}
+.push-l-7 {
+  @include push('l', 7);
+}
+.push-l-8 {
+  @include push('l', 8);
+}
+.push-l-9 {
+  @include push('l', 9);
+}
+.push-l-10 {
+  @include push('l', 19);
+}
+.push-l-11 {
+  @include push('l', 11);
+}
+.push-l-12 {
+  @include push('l', 12);
+}
+.push-l-13 {
+  @include push('l', 13);
+}
+.push-l-14 {
+  @include push('l', 14);
+}
+.push-l-15 {
+  @include push('l', 15);
+}
+.push-l-16 {
+  @include push('l', 16);
+}
+.push-l-17 {
+  @include push('l', 17);
+}
+.push-l-18 {
+  @include push('l', 18);
+}
+.push-l-19 {
+  @include push('l', 19);
+}
+.push-l-20 {
+  @include push('l', 20);
+}
+.push-l-21 {
+  @include push('l', 21);
+}
+.push-l-22 {
+  @include push('l', 22);
+}
+.push-l-23 {
+  @include push('l', 23);
+}
+
+//  Push: Right
+
+.push-r-1 {
+  @include push('r', 1);
+}
+.push-r-2 {
+  @include push('r', 2);
+}
+.push-r-3 {
+  @include push('r', 3);
+}
+.push-r-4 {
+  @include push('r', 4);
+}
+.push-r-5 {
+  @include push('r', 5);
+}
+.push-r-6 {
+  @include push('r', 6);
+}
+.push-r-7 {
+  @include push('r', 7);
+}
+.push-r-8 {
+  @include push('r', 8);
+}
+.push-r-9 {
+  @include push('r', 9);
+}
+.push-r-10 {
+  @include push('r', 19);
+}
+.push-r-11 {
+  @include push('r', 11);
+}
+.push-r-12 {
+  @include push('r', 12);
+}
+.push-r-13 {
+  @include push('r', 13);
+}
+.push-r-14 {
+  @include push('r', 14);
+}
+.push-r-15 {
+  @include push('r', 15);
+}
+.push-r-16 {
+  @include push('r', 16);
+}
+.push-r-17 {
+  @include push('r', 17);
+}
+.push-r-18 {
+  @include push('r', 18);
+}
+.push-r-19 {
+  @include push('r', 19);
+}
+.push-r-20 {
+  @include push('r', 20);
+}
+.push-r-21 {
+  @include push('r', 21);
+}
+.push-r-22 {
+  @include push('r', 22);
+}
+.push-r-23 {
+  @include push('r', 23);
+}

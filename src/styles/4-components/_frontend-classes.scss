@@ -1,0 +1,96 @@
+/*
+    Front Classes
+*/
+
+$keyline: rem(1) solid $grayscale1;
+
+//  Default
+
+[data-width='full'] {
+  @include contentWidth(full);
+}
+[data-width='max'] {
+  @include contentWidth(max);
+}
+
+[data-keyline='top'] {
+  border-top: $keyline;
+}
+[data-keyline='bottom'] {
+  border-bottom: $keyline;
+}
+[data-keyline='both'] {
+  border-top: $keyline;
+  border-bottom: $keyline;
+}
+
+[data-margin='top'] {
+  @include contentSpace('m t');
+}
+[data-margin='bottom'] {
+  @include contentSpace('m b');
+}
+[data-margin='both'] {
+  @include contentSpace('m y');
+}
+
+[data-padding='top'] {
+  @include contentSpace('p t');
+}
+[data-padding='bottom'] {
+  @include contentSpace('p b');
+}
+[data-padding='both'] {
+  @include contentSpace('p y');
+}
+
+[data-transparency='10%'] {
+  opacity: 0.1;
+}
+[data-transparency='20%'] {
+  opacity: 0.2;
+}
+[data-transparency='30%'] {
+  opacity: 0.3;
+}
+[data-transparency='40%'] {
+  opacity: 0.4;
+}
+[data-transparency='50%'] {
+  opacity: 0.5;
+}
+[data-transparency='60%'] {
+  opacity: 0.6;
+}
+[data-transparency='70%'] {
+  opacity: 0.7;
+}
+[data-transparency='80%'] {
+  opacity: 0.8;
+}
+[data-transparency='90%'] {
+  opacity: 0.9;
+}
+[data-transparency='100%'] {
+  opacity: 1;
+}
+
+//  Breakpoint: Large (+Hover)
+
+@include media('large') {
+}
+
+//  Breakpoint: XLarge
+
+@include media('xlarge') {
+}
+
+//  Breakpoint: Medium
+
+@include media('medium') {
+}
+
+//  Breakpoint: Small
+
+@include media('small') {
+}

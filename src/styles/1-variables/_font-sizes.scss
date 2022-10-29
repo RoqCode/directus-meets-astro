@@ -1,0 +1,176 @@
+@import '../2-utilities/px-to-rem';
+
+/*
+    Default usage: @include fontSize('type');
+*/
+
+$responsiveTypo: (
+  'xlarge': (
+    'body': (
+      'fs': rem(16),
+      'lh': 1.375,
+    ),
+    'bodySmall': (
+      'fs': rem(14),
+      'lh': 1.375,
+    ),
+    'bodyLarge': (
+      'fs': rem(18),
+      'lh': 1.375,
+    ),
+    'h1': (
+      'fs': rem(44),
+      'lh': 1.05,
+    ),
+    'h2': (
+      'fs': rem(36),
+      'lh': 1.25,
+    ),
+    'h3': (
+      'fs': rem(28),
+      'lh': 1.25,
+    ),
+    'h4': (
+      'fs': rem(22),
+      'lh': 1.222,
+    ),
+    'h5': (
+      'fs': rem(18),
+      'lh': 1.222,
+    ),
+    'h6': (
+      'fs': rem(16),
+      'lh': 1.222,
+    ),
+    'headerSubMenu': (
+      'fs': rem(14),
+      'lh': 1.375,
+    ),
+  ),
+  'large': (
+    'body': (
+      'fs': rem(16),
+      'lh': 1.375,
+    ),
+    'bodySmall': (
+      'fs': rem(14),
+      'lh': 1.375,
+    ),
+    'bodyLarge': (
+      'fs': rem(18),
+      'lh': 1.375,
+    ),
+    'h1': (
+      'fs': rem(44),
+      'lh': 1.05,
+    ),
+    'h2': (
+      'fs': rem(36),
+      'lh': 1.25,
+    ),
+    'h3': (
+      'fs': rem(28),
+      'lh': 1.25,
+    ),
+    'h4': (
+      'fs': rem(22),
+      'lh': 1.222,
+    ),
+    'h5': (
+      'fs': rem(18),
+      'lh': 1.222,
+    ),
+    'h6': (
+      'fs': rem(16),
+      'lh': 1.222,
+    ),
+    'headerSubMenu': (
+      'fs': rem(14),
+      'lh': 1.375,
+    ),
+  ),
+  'medium': (
+    'body': (
+      'fs': rem(14),
+      'lh': 1.375,
+    ),
+    'bodySmall': (
+      'fs': rem(12),
+      'lh': 1.375,
+    ),
+    'bodyLarge': (
+      'fs': rem(16),
+      'lh': 1.375,
+    ),
+    'h1': (
+      'fs': rem(40),
+      'lh': 1.125,
+    ),
+    'h2': (
+      'fs': rem(32),
+      'lh': 1.25,
+    ),
+    'h3': (
+      'fs': rem(24),
+      'lh': 1.25,
+    ),
+    'h4': (
+      'fs': rem(18),
+      'lh': 1.222,
+    ),
+    'h5': (
+      'fs': rem(18),
+      'lh': 1.222,
+    ),
+    'h6': (
+      'fs': rem(16),
+      'lh': 1.222,
+    ),
+    'headerSubMenu': (
+      'fs': rem(14),
+      'lh': 1.375,
+    ),
+  ),
+  'small': (
+    'body': (
+      'fs': rem(14),
+      'lh': 1.5,
+    ),
+    'bodySmall': (
+      'fs': rem(12),
+      'lh': 1.5,
+    ),
+    'bodyLarge': (
+      'fs': rem(16),
+      'lh': 1.5,
+    ),
+    'h1': (
+      'fs': rem(32),
+      'lh': 1.125,
+    ),
+    'h2': (
+      'fs': rem(26),
+      'lh': 1.15384615,
+    ),
+    'h3': (
+      'fs': rem(22),
+      'lh': 1.13636364,
+    ),
+    'h4': (
+      'fs': rem(18),
+      'lh': 1.222,
+    ),
+    'h5': (
+      'fs': rem(18),
+      'lh': 1.222,
+    ),
+    'h6': (
+      'fs': rem(16),
+      'lh': 1.222,
+    ),
+    'headerSubMenu': (
+      'fs': rem(14),
+      'lh': 1.375,
+    ),
+  ),
+);

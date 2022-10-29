@@ -1,0 +1,26 @@
+/*
+    The magic behind the responsive font-sizes
+ */
+
+@mixin responsiveTypo($break: 'default', $type: 'body', $map: $responsiveTypo) {
+  $firstLevel: map-get($map, $break); // Get Breakpoint
+  $secondLevel: map-get($firstLevel, $type); // Get Element
+
+  font-size: map-get($secondLevel, 'fs'); // Get font-size
+  line-height: map-get($secondLevel, 'lh'); // Get line-height
+}
+
+@mixin fontSize($responsiveTypoSize) {
+  @include media('large') {
+    @include responsiveTypo('large', '#{$responsiveTypoSize}');
+  }
+  @include media('medium') {
+    @include responsiveTypo('medium', '#{$responsiveTypoSize}');
+  }
+  @include media('small') {
+    @include responsiveTypo('small', '#{$responsiveTypoSize}');
+  }
+  @include media('xlarge') {
+    @include responsiveTypo('xlarge', '#{$responsiveTypoSize}');
+  }
+}

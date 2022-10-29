@@ -1,0 +1,65 @@
+/*
+    8-Point Grid System
+    └── Using multiples of 8 to define dimensions, padding, and margin of 3-elements.
+    Currently supports:         margin/padding, width/height and specific commands
+    Default usage:              @include pointGrid('command', value);
+*/
+
+@mixin pointGrid($command, $value, $context: $gridContext) {
+  // Width/Height
+
+  @if $command == 'w' {
+    width: rem($value * $context);
+  } @else if $command == 'h' {
+    height: rem($value * $context);
+  } @else if $command == 'wh' {
+    width: rem($value * $context);
+    height: rem($value * $context);
+  }
+
+  // Margin
+
+  @else if $command == 'm' {
+    margin: rem($value * $context);
+  } @else if $command == 'm x' {
+    margin-left: rem($value * $context);
+    margin-right: rem($value * $context);
+  } @else if $command == 'm y' {
+    margin-top: rem($value * $context);
+    margin-bottom: rem($value * $context);
+  } @else if $command == 'm t' {
+    margin-top: rem($value * $context);
+  } @else if $command == 'm r' {
+    margin-right: rem($value * $context);
+  } @else if $command == 'm b' {
+    margin-bottom: rem($value * $context);
+  } @else if $command == 'm l' {
+    margin-left: rem($value * $context);
+  }
+
+  // Padding
+
+  @else if $command == 'p' {
+    padding: rem($value * $context);
+  } @else if $command == 'p x' {
+    padding-left: rem($value * $context);
+    padding-right: rem($value * $context);
+  } @else if $command == 'p y' {
+    padding-top: rem($value * $context);
+    padding-bottom: rem($value * $context);
+  } @else if $command == 'p t' {
+    padding-top: rem($value * $context);
+  } @else if $command == 'p r' {
+    padding-right: rem($value * $context);
+  } @else if $command == 'p b' {
+    padding-bottom: rem($value * $context);
+  } @else if $command == 'p l' {
+    padding-left: rem($value * $context);
+  }
+
+  // Specific commands
+
+  @else {
+    #{$command}: rem($value * $context);
+  }
+}

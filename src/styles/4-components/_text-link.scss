@@ -1,0 +1,48 @@
+/*
+    Text Link
+*/
+
+.textLink {
+  p,
+  ul,
+  ol {
+    a {
+      position: relative;
+      color: $textLinkColor;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: rem(1);
+      }
+
+      &::before {
+        width: 100%;
+        background-color: $grayscale3;
+        z-index: 1;
+      }
+
+      &::after {
+        background-color: $brandColorPrimary;
+        transition: $transitionTextLink;
+        z-index: 2;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          color: $textLinkColorHover;
+
+          &:hover::after {
+            left: 0;
+            right: auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

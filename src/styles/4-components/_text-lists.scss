@@ -1,0 +1,53 @@
+/*
+    List types
+*/
+
+//  Lists
+
+.listUl,
+.listOl {
+  margin-bottom: 0.75em;
+  list-style: none;
+
+  li {
+    margin: rem(8) 0;
+    padding-left: rem(32);
+    position: relative;
+
+    &::before {
+      @include pos(a, 0, auto, auto, 0);
+      width: rem(32);
+      color: $brandColorPrimary;
+      z-index: 1;
+    }
+  }
+}
+
+//  Unordered list
+
+.listUl,
+.listUl ul {
+  li::before {
+    content: '–';
+  }
+}
+
+//  Ordered list
+
+.listOl {
+  ol {
+    counter-reset: olPoint;
+
+    li {
+      counter-increment: olPoint;
+
+      &::before {
+        content: counters(olPoint, '.', decimal-leading-zero);
+      }
+
+      li {
+        padding-left: rem(52);
+      }
+    }
+  }
+}
