@@ -20,7 +20,7 @@
     @include font('headline');
     @include fontSize('h1');
     color: $brandColorPrimary;
-    font-weight: $fwBold;
+    font-weight: $fwBlack;
   } @else if $s == 'h2' {
     @include font('headline');
     @include fontSize('h2');
