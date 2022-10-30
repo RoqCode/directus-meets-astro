@@ -14,14 +14,9 @@ const { title = 'Directus meets Astro' } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <div class="content">
+    <main>
       <slot />
-    </div>
-    <style lang="scss">
-      .content {
-        width: min(95%, 120rem);
-        margin: 0 auto;
-      }
-    </style>
+    </main>
+    <style lang="scss"></style>
   </body>
 </html>
