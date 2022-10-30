@@ -1,4 +1,6 @@
 ---
+import { Picture } from '@astrojs/image/components';
+
 const response = await fetch(import.meta.env.GRAPHQL_URL, {
   method: 'POST',
   headers: {
@@ -30,9 +32,12 @@ const hero = json.data.hero;
 
 <section class="hero">
   <div class="bg-image">
-    <img
+    <Picture
       src={`${import.meta.env.DIRECTUS_ASSETS}/${hero.img.filename_disk}`}
       alt={hero.img.title}
+      sizes="(min-width: 1024px) 1024px, 100vw"
+      widths={[320, 640, 1024]}
+      aspectRatio="16:9"
     />
   </div>
   <div class="hero__content">
