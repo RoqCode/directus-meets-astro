@@ -2,11 +2,6 @@
     Front Classes
 */
 
-@use '../1-abstracts/mixins' as *;
-@use '../1-abstracts/variables' as *;
-@use 'content-width' as *;
-@use 'content-space' as *;
-
 $keyline: rem(1) solid $grayscale1;
 
 //  Default

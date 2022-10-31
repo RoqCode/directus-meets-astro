@@ -1,0 +1,118 @@
+/*
+    Default variables used in this whole template
+*/
+
+//  Fonts
+
+$fontBody: 'Inter';
+$fontHeadline: 'Satoshi';
+
+//  Colors : Default
+
+$white: white;
+$black: black;
+$bodyBg: rgb(20, 20, 20);
+
+//  Colors : Corporate
+
+$brandColorPrimary: #8618da;
+$brandColorSecondary: lighten($brandColorPrimary, 10%);
+
+//  Colors : Text
+
+$textColor: $white;
+$textLinkColor: $white;
+$textLinkColorHover: $brandColorPrimary;
+
+//  Colors : Signal
+
+$signalColorGreen: #2ecc71;
+$signalColorYellow: #f1c40f;
+$signalColorRed: #e74c3c;
+
+//  Colors : Grayscale
+
+$grayscale1: #eee;
+$grayscale2: #ddd;
+$grayscale3: #ccc;
+$grayscale4: #bbb;
+$grayscale5: #9a9a9a;
+$grayscale6: #707070;
+
+//  Transition(s)
+
+$transition: 0.3s ease-in-out;
+$transitionTextLink: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+//  Content Space
+//  └── 4-components/_custom/_content-space.scss
+
+$contentSpaceXLarge: 8em;
+$contentSpaceLarge: 5em;
+$contentSpaceMedium: 3em;
+$contentSpaceSmall: 24px;
+
+//  Base pixel size
+//  └── 1-2-utilities/_px-to-rem.scss
+
+$basePixelSize: 16;
+
+//  8-Point Grid System
+//  └── 1-2-utilities/_8-point-grid.scss
+
+$gridContext: 8;
+
+//  Grid
+//  └── 1-2-utilities/_system.scss + 1-2-utilities/_classes.scss
+//  Info: If u want to use px values, please write it without 'px' and set the proper $...Px variable on 'true'.
+
+$gridMaxWidth: 1280;
+$gridMaxWidthPx: false;
+$gridColumns: 24;
+$gridGutter: true;
+$gridGutterSize: 16;
+$gridGutterSizePx: true;
+
+//  Form
+//  └── 4-components/_form/contao-form.scss
+//  Info: Activate the import at 'index.fe.scss' to use this variables.
+
+$formPaddingX: 3; // 8pt-Grid-System
+$formPaddingY: 2; // 8pt-Grid-System
+$formTextColor: $black;
+$formTextColorFocus: $black;
+$formTextFontWeight: normal;
+$formTextFontStyle: normal;
+$formTextLetterSpacing: 0;
+$formBackground: $white;
+$formBorderColor: $grayscale2;
+$formBorderStyle: 1px solid $formBorderColor;
+$formBorderRadius: 0.5; // 8pt-Grid-System
+$formBorderColorFocus: $brandColorPrimary;
+$formPlaceholderTextColor: $grayscale5;
+$formPlaceholderFontWeight: normal;
+$formPlaceholderFontStyle: normal;
+$formPlaceholderLetterSpacing: 0;
+$formClickElementSize: 24px;
+
+//  Brakepoints
+//  └── 1-2-utilities/_breakpoints.scss
+//  Info: The medium (tablet) range will calculated automatically from small and large.
+
+$breakpointSmall: 767; //  Smartphones
+//  $breakpointMedium:              auto;   //  Tablets
+$breakpointLarge: 1200; //  Desktops
+$breakpointXLarge: 1800; //  Large Desktops
+
+// font sizes
+
+/* @link https://utopia.fyi/type/calculator?c=320,14,1.2,1280,18,1.5,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+$step--2: clamp(0.5rem, calc(0.64rem + -0.18vw), 0.61rem);
+$step--1: clamp(0.73rem, calc(0.72rem + 0.03vw), 0.75rem);
+$step-0: clamp(0.88rem, calc(0.79rem + 0.42vw), 1.13rem);
+$step-1: clamp(1.05rem, calc(0.84rem + 1.06vw), 1.69rem);
+$step-2: clamp(1.26rem, calc(0.84rem + 2.12vw), 2.53rem);
+$step-3: clamp(1.51rem, calc(0.75rem + 3.81vw), 3.8rem);
+$step-4: clamp(1.81rem, calc(0.52rem + 6.47vw), 5.7rem);
+$step-5: clamp(2.18rem, calc(0.06rem + 10.61vw), 8.54rem);

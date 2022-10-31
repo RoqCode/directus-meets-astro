@@ -2,9 +2,6 @@
     Default usage : @include button('default');
 */
 
-@use '../1-abstracts/mixins' as *;
-@use '../1-abstracts/variables' as *;
-
 @mixin button($style) {
   @if $style == 'default' {
     @include pointGrid('p x', 4);
@@ -12,8 +9,7 @@
     @include typo('button');
     background-color: $brandColorPrimary;
     display: inline-block;
-    transition: color $transition, background-color $transition,
-      opacity $transition;
+    transition: color $transition, background-color $transition, opacity $transition;
 
     @include media('large') {
       &:hover:not(:disabled) {
@@ -28,8 +24,7 @@
     @include fontSize('bodySmall');
     background-color: $brandColorPrimary;
     display: inline-block;
-    transition: color $transition, background-color $transition,
-      opacity $transition;
+    transition: color $transition, background-color $transition, opacity $transition;
 
     @include media('large') {
       &:hover:not(:disabled) {

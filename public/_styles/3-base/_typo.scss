@@ -2,10 +2,6 @@
     Default usage: @include typo('style');
 */
 
-@use '../1-abstracts/mixins' as *;
-@use '../1-abstracts/variables' as *;
-@use 'font-import' as *;
-
 @mixin typo($s) {
   @if ($s == 'p' or $s == 'body') {
     @include font('body');

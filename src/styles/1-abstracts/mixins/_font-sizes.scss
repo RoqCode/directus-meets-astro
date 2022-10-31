@@ -1,0 +1,26 @@
+@use '../variables' as *;
+
+@mixin fontSize($type) {
+  @if ($type == 'body') {
+    font-size: $step-0;
+    line-height: 1.5;
+  } @else if $type == 'h1' {
+    font-size: $step-5;
+    line-height: 1.2;
+  } @else if $type == 'h2' {
+    font-size: $step-4;
+    line-height: 1.2;
+  } @else if $type == 'h3' {
+    font-size: $step-3;
+    line-height: 1.2;
+  } @else if $type == 'h4' {
+    font-size: $step-2;
+    line-height: 1.2;
+  } @else if $type == 'h5' {
+    font-size: $step-1;
+    line-height: 1.2;
+  } @else if $type == 'h6' {
+    font-size: $step-1;
+    line-height: 1.2;
+  }
+}

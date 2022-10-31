@@ -58,15 +58,8 @@ const hero = json.data.hero;
 </section>
 
 <style lang="scss">
-  .hero {
-    position: relative;
-    min-height: 80vh;
-    width: 100%;
-
-    &__content {
-      position: relative;
-      z-index: 1;
-      width: min(100%, 60ch);
-    }
+  @use '../styles/index.scss' as *;
+  h2 {
+    color: $brandColorPrimary;
   }
 </style>

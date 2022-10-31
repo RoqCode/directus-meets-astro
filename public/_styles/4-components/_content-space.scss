@@ -2,9 +2,6 @@
     Default usage : @include contentSpace('command');
 */
 
-@use '../1-abstracts/mixins' as *;
-@use '../1-abstracts/variables' as *;
-
 @mixin contentSpace($command, $important: '') {
   // Padding
 
