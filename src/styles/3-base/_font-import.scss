@@ -2,10 +2,7 @@
     Font example for GoogleFonts (offline)
 */
 
-$fwRegular: 300;
-$fwMedium: 500;
-$fwBold: 700;
-$fwBlack: 900;
+@use '../1-abstracts/variables' as *;
 
 /* inter-300 - latin */
 @font-face {

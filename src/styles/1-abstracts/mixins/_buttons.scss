@@ -2,8 +2,7 @@
     Default usage : @include button('default');
 */
 
-@use '../1-abstracts/mixins' as *;
-@use '../1-abstracts/variables' as *;
+@use '../variables' as *;
 
 @mixin button($style) {
   @if $style == 'default' {

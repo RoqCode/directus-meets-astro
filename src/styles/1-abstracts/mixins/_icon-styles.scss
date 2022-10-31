@@ -4,8 +4,7 @@
     – @include iconColor(color);
 */
 
-@use '../1-abstracts/mixins' as *;
-@use '../1-abstracts/variables' as *;
+@use '../variables' as *;
 
 @mixin icon($width, $height, $color, $weight) {
   width: rem($width);
