@@ -5,6 +5,7 @@
 */
 
 @use '../variables' as *;
+@use 'px-to-rem' as *;
 
 @mixin icon($width, $height, $color, $weight) {
   width: rem($width);

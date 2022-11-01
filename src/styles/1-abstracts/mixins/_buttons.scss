@@ -3,6 +3,7 @@
 */
 
 @use '../variables' as *;
+@use 'px-to-rem' as *;
 
 @mixin button($style) {
   @if $style == 'default' {

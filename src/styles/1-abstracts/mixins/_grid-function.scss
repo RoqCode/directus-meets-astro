@@ -7,6 +7,7 @@
 */
 
 //  Mixin: Columns
+@use 'px-to-rem' as *;
 
 @mixin col($value, $gridColumns: $gridColumns) {
   float: left;
@@ -97,13 +98,17 @@
     $gridGutterSizeEm: rem($gridGutterSize);
 
     @if $direction == 'l' {
-      margin-left: calc(((100% / #{$gridColumns}) * #{$value}) + (#{$gridGutterSizeEm} / 2));
+      margin-left: calc(
+        ((100% / #{$gridColumns}) * #{$value}) + (#{$gridGutterSizeEm} / 2)
+      );
 
       @include media('small') {
         margin-left: calc(#{$gridGutterSizeEm} / 2);
       }
     } @else if $direction == 'r' {
-      margin-right: calc(((100% / #{$gridColumns}) * #{$value}) + (#{$gridGutterSizeEm} / 2));
+      margin-right: calc(
+        ((100% / #{$gridColumns}) * #{$value}) + (#{$gridGutterSizeEm} / 2)
+      );
 
       @include media('small') {
         margin-right: calc(#{$gridGutterSizeEm} / 2);
@@ -111,13 +116,17 @@
     }
   } @else if $gridGutter == true and $gridGutterSizePx == false {
     @if $direction == 'l' {
-      margin-left: calc(((100% / #{$gridColumns}) * #{$value}) + (#{$gridGutterSize} / 2));
+      margin-left: calc(
+        ((100% / #{$gridColumns}) * #{$value}) + (#{$gridGutterSize} / 2)
+      );
 
       @include media('small') {
         margin-left: calc(#{$gridGutterSize} / 2);
       }
     } @else if $direction == 'r' {
-      margin-right: calc(((100% / #{$gridColumns}) * #{$value}) + (#{$gridGutterSize} / 2));
+      margin-right: calc(
+        ((100% / #{$gridColumns}) * #{$value}) + (#{$gridGutterSize} / 2)
+      );
 
       @include media('small') {
         margin-right: calc(#{$gridGutterSize} / 2);

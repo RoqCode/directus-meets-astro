@@ -1,11 +1,11 @@
-@use '2-resets/reset-and-normalize';
+@use '2-resets/reset-and-normalize' as *;
 
 @forward '1-abstracts/variables';
 @forward '1-abstracts/mixins';
 
-@forward '3-base';
-@forward '4-components';
-@forward '5-layout';
+@use '3-base' as *;
+@use '4-components' as *;
+@use '5-layout' as *;
 
 //TODO check whether import are working correctly
 // should be fixed

@@ -3,6 +3,7 @@
 */
 
 @use '../variables' as *;
+@use 'px-to-rem' as *;
 @use 'breakpoints' as *;
 @use '8-point-grid' as *;
 
