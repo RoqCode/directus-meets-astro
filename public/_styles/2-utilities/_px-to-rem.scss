@@ -1,9 +1,0 @@
-/*
-    Default usage:              rem(value)
-*/
-
-@use 'sass:math';
-
-@function rem($pixels, $context: $basePixelSize) {
-  @return math.div($pixels, $context) * 1rem;
-}

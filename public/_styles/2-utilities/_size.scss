@@ -1,9 +1,0 @@
-/*
-    Usage for same width and height:        @include size(both);
-    Usage for different width and height:   @include size(width, height);
-*/
-
-@mixin size($width, $height: $width) {
-  width: $width;
-  height: $height;
-}
