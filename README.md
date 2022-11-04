@@ -118,4 +118,4 @@ If the API-Endpoint is not working, check the permissions of the element in Dire
 
 Every Element needs to have it's own permissions set. Easy to forget, but easy to fix.
 
-Also: to access Images in Directus, you need to set `Directus Files` to `read`.
+Also: to access Images in Directus, you need to set the permissions for `Directus Files` to `read`.
