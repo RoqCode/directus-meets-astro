@@ -54,9 +54,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
 
-<br>
-___
-<br>
+---
 
 ## 2. Workflow
 
@@ -115,8 +113,6 @@ Tools like Insomnia and Postman can be used to test the Query.
 <br>
 
 ## Potential Issues
-
----
 
 If the API-Endpoint is not working, check the permissions of the element in Directus you are trying to access. Public Elements should be set to `read`.
 
